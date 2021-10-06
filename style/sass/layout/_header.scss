@@ -1,0 +1,4 @@
+header{@include dimension(100%,70px);
+    background-color: color-mode("c1");
+    @extend .shadow-box;
+}

@@ -1,0 +1,5 @@
+/* position and directions */ 
+.center-h{ display: flex; justify-content: center; }
+.center-v{display: flex; align-items: center;}
+.center{display: flex; align-items: center;   justify-content: center;}
+.floating{display: flex; float: $direction}

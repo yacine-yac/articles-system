@@ -1,0 +1,25 @@
+/* mode style value  color (dark or lightness) */
+$mode:"bright" ;
+/*dark mode */
+  /* font color */
+$font-dark:(c1:#232F34, c2:#344955 ,c3:#4A6572 );
+  /* color text */
+$text-dark:(c1:#f3f1ef,c2:green); 
+/*============================================================== */
+/*  brightness mode */
+$font-bright:(
+     c1:rgb(251, 252, 255),
+     c2:rgb(209, 213, 214),
+     c3:rgba(228, 240, 245, 0.897)
+);
+$text-bright:(c1:#90a4ae,c2:red); 
+/*=========================================================================*/
+
+/* police principale and secondery*/
+$police-p:sans-serif;
+/* top Layers */
+$layer-x1:10;
+$layer-x2:20;
+$layer-x1:30;
+/* directions */
+$direction:left;

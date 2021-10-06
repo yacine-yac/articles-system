@@ -1,0 +1,40 @@
+/*classes just extended margin border ....*/
+%spacing{margin: 0px; }  
+
+/* run mixing methods*/
+
+/* get dimension of box width and height*/
+@mixin dimension($x,$y) {
+     width:$x;height: $y;
+}
+/* degradation of color with timing */
+@mixin degradation($color) {
+     transition: 0.45s ease;opacity: 0.6;
+}
+/* mode design (dark or luminous ) degree like c1 c2 c3 */
+@function color-mode($degree) {
+     @if $mode=="dark"{
+          @return map-get($font-dark,$degree) ;  
+     }@else{
+          @return map-get($font-bright,$degree);
+     }
+      
+} 
+/* text style (size color direction) */
+@mixin  text-format($color) {
+     @if $mode == "dark" {
+           color:  map-get($text-dark,$color) ;
+     }@else{
+           color:  map-get($text-bright,$color);
+     }
+     font:20px $police-p;
+}
+/* shadow mode(dark and bright)*/
+@mixin shadow($size,$color){
+     @if $mode =="dark"{
+          box-shadow: $size map-get($font-dark,$color);   
+     }@else{
+          box-shadow: $size map-get($font-dark,$color); 
+     }
+     
+}

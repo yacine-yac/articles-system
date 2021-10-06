@@ -1,0 +1,11 @@
+/* common body */
+body{background:color-mode("c1");margin: 0px;padding: 0px;
+   // font-family:  $police-p;
+}
+/* class shadow*/
+.shadow-box{  
+     box-shadow: 0px 0px  6px 0px rgb(62, 74, 82);
+}
+/* remove default style */
+li,ol{padding: 0px;list-style-type: none;}
+a{text-decoration: none;color:  red;}

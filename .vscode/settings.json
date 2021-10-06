@@ -1,0 +1,13 @@
+{
+    "liveSassCompile.settings.formats":[
+            {
+                "format": "expanded",
+                "extensionName": ".css",
+                "savePath": "./style/css/pages"
+            }
+        ],
+        "[c]": {},
+        "[bat]": {},
+        "editor.fontSize": 16
+     
+}

@@ -1,0 +1,25 @@
+/* import files*/
+@import "../functions/variables";
+@import "../functions/methods";
+@import "../pages/global";
+@import "../components/buttons";
+@import "../layout/grid"; 
+@import "../layout/header" ;
+/*======================================================================*/
+   
+/* ==================================================================*/
+  
+.main{@include dimension(100%,800px);border: 0px solid red;
+    & div:nth-child(1){
+      @include dimension(70%,100%);
+    }
+    & div:nth-child(2){
+        @include dimension(25%,310px);
+    }
+    & div{background-color:color-mode("c1"); @include text-format("c2");
+       margin: 1.5% 1%; @extend .floating;justify-content: start;  box-shadow: 0px 0px 8px  0px rgba(196, 197, 197, 0.938);
+       &:hover{
+       @include degradation(color-mode("c1"));
+       box-shadow: 0px 0px 40px 0px rgb(187, 218, 218);
+    }} 
+}
